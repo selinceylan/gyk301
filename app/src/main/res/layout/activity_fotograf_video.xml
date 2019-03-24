@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FotografVideoActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_weight="1"
+            />
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+<LinearLayout
+    android:layout_alignParentBottom="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <Button
+
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+
+        android:layout_height="@dimen/btnyuksekligi"
+        android:layout_weight="1"
+        android:background="@color/bordo"
+        android:layout_margin="@dimen/margin"
+        android:onClick="fotografCek"
+        android:text="@string/foto_cek"
+        android:textColor="@color/beyaz"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:onClick="videoCek"
+        android:layout_height="@dimen/btnyuksekligi"
+        android:layout_margin="@dimen/margin"
+        android:layout_weight="1"
+        android:background="@color/bordo"
+        android:text="@string/video_cek"
+        android:textColor="@color/beyaz"
+        android:textSize="25dp" />
+
+
+
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

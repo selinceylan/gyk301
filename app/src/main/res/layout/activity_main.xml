@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:onClick="fotografVideoCek"
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/fotografVideo"
+            android:layout_width="match_parent"
+            android:background="@color/yesil"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:text="@string/fotobtn"
+            />
+
+        <Button
+
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/sesvekayit"
+            android:layout_width="match_parent"
+            android:background="@color/mavi"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:text="@string/sesbtn"
+             />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/harita"
+            android:onClick="haritayaGit"
+            android:layout_width="match_parent"
+            android:background="@color/kırmızı"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:text="@string/haritabtn"
+            />
+
+        <Button
+
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:background="@color/sarı"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:onClick="sayfayaGit"
+            android:text="@string/webbtn" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/sms"
+            android:onClick="SMSGonder"
+            android:layout_width="match_parent"
+            android:background="@color/mor"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:text="@string/smsbtn"
+            />
+
+        <Button
+
+            android:layout_margin="@dimen/margin"
+            android:id="@+id/arama"
+            android:layout_width="match_parent"
+            android:background="@color/bordo"
+            android:layout_height="@dimen/btnyuksekligi"
+            android:layout_weight="1"
+            android:textStyle="italic"
+            android:textColor="#FBFCFC"
+            android:onClick="aramaYap"
+            android:text="@string/aramabtn" />
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
